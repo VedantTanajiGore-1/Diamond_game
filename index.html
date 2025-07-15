@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diamond Tile Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Diamond Tile Game</h1>
+
+  <div class="controls">
+    <label>
+      Board size (n x n):
+      <input type="number" id="boardSize" min="3" max="10" value="5">
+    </label>
+    <label>
+      Bombs:
+      <input type="number" id="bombCount" min="1" max="20" value="5">
+    </label>
+    <button class="restart-btn" onclick="startGame()">Start / Restart Game</button>
+  </div>
+
+  <div class="scoreboard">
+    <span>Current Score: <span id="currentScore">0</span></span> |
+    <span>Best Score: <span id="bestScore">0</span></span>
+  </div>
+
+  <div id="gameBoard" class="game-board"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
